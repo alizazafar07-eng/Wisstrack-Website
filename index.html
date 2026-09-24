@@ -195,7 +195,14 @@
   .persona .picon{font-size:22px; margin-bottom:12px;}
   .persona h4{font-size:15px; font-weight:600; margin-bottom:7px;}
   .persona p{font-size:13.5px; color:var(--steel);}
-
+  /* trust */
+  .trust-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden;}
+  @media (max-width:900px){ .trust-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:520px){ .trust-grid{grid-template-columns:1fr;} }
+  .trust-item{background:var(--paper); padding:26px 22px;}
+  .trust-item .ticon{font-size:20px; margin-bottom:12px;}
+  .trust-item h4{font-size:15px; font-weight:600; margin-bottom:7px;}
+  .trust-item p{font-size:13.5px; color:var(--steel);}
   /* pilot */
   .pilot{background:var(--ink); color:var(--paper); border-radius:14px; padding:60px 52px; position:relative; overflow:hidden;}
   @media (max-width:700px){ .pilot{padding:40px 24px;} }
@@ -479,7 +486,39 @@
       </div>
     </div>
   </section>
+  <!-- TRUST -->
+  <section>
+    <div class="wrap">
+      <div class="shead reveal">
+        <h2>Your lab's data stays yours.</h2>
+        <p>WissTrack is built to hold sensitive research data — so security isn't an afterthought.</p>
+      </div>
+      <div class="trust-grid reveal">
+        <div class="trust-item">
+          <div class="ticon">🔒</div>
+          <h4>Encrypted in transit & at rest</h4>
+          <p>Your inventory data is encrypted end-to-end, on every device and in storage.</p>
+        </div>
+        <div class="trust-item">
+          <div class="ticon">🇪🇺</div>
+          <h4>EU-based hosting</h4>
+          <p>Data is hosted in the EU, built with GDPR principles in mind from day one.</p>
+        </div>
+        <div class="trust-item">
+          <div class="ticon">🚫</div>
+          <h4>We never sell your data</h4>
+          <p>Your samples, protocols, and lab records are never sold or shared with third parties.</p>
+        </div>
+        <div class="trust-item">
+          <div class="ticon">📤</div>
+          <h4>Your data, your control</h4>
+          <p>Export your full inventory or request deletion at any time — no lock-in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+</parameter>
   <!-- PILOT -->
   <section id="pilot">
     <div class="wrap">
